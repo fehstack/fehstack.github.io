@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,26 +8,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-MoA49Ls9XrcdNVyPmQGS3yYiNYZ3F7a9VW7LkL1vIn04ro/btFyqARxZs2++YbK2bJf6CfrL4Pq9AHyJ45iRw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css" />
   <title>Felipe Santiago</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript">
     function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'pt', includedLanguages: 'en,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      new google.translate.TranslateElement({ pageLanguage: 'pt', includedLanguages: 'en,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
     }
 
-    $(document).ready(function() {
-      $('#translate-button').on('click', function() {
+    $(document).ready(function () {
+      $('#translate-button').on('click', function () {
         var language = $('#select-language').val();
-        var google_translate = new google.translate.TranslateElement({pageLanguage: 'pt', includedLanguages: 'en,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        var google_translate = new google.translate.TranslateElement({ pageLanguage: 'pt', includedLanguages: 'en,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
         google_translate.getSourceLanguage();
         google_translate.getTargetLanguage(language);
       });
     });
   </script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
+
 <body class="light" id="top">
   <header class="header center">
     <h3>
@@ -89,7 +95,6 @@
       </div>
     </div>
 
-    <!-- Projects -->
     <section id="projects" class="section projects">
       <h2 class="section__title">Projetos</h2>
 
@@ -97,12 +102,12 @@
         <div class="project">
           <h3>FIAP + B3</h3>
           <p class="project__description">
-            <ul>
-              Objetivo: Aumentar público de investidores e simplificar conhecimento sobre IPO.<br><br>
-              Correção de bugs em plataformas existentes.<br><br>
-              Desenvolvimento de base de projeto em Java.<br><br>
-              Integração com front-end e banco de dados no resultado final.
-            </ul>
+          <ul>
+            Objetivo: Aumentar público de investidores e simplificar conhecimento sobre IPO.<br><br>
+            Correção de bugs em plataformas existentes.<br><br>
+            Desenvolvimento de base de projeto em Java.<br><br>
+            Integração com front-end e banco de dados no resultado final.
+          </ul>
           </p>
           <ul class="project__stack">
             <li class="project__stack-item">Java</li>
@@ -132,7 +137,7 @@
 
         <div class="project">
 
-          <h3>Alura</h3>
+          <h3>Alura - Shell Script</h3>
           <p class="project__description">
             Projeto de conversão de imagens JPG para PNG.<br><br>
             Ambientes de execução utilizados: GitBash e Ubuntu.<br><br>
@@ -145,28 +150,29 @@
             <li class="project__stack-item">Ubuntu</li>
           </ul>
         </div>
-      </div>
-    
-            <div class="project">
 
-          <h3>Alura - Spring</h3>
-          <p class="project__description">
-            CRUD com Spring e FlyWay<br><br>
-            Ambientes de execução utilizados: intellij e Insomnia.<br><br>
-            Eliminação da necessidade de conversão manual de cada imagem.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Java</li>
-            <li class="project__stack-item">Spring Boot</li>
-            <li class="project__stack-item">MySQL</li>
-            <li class="project__stack-item">Insomnia</li><br>
-            <a href="https://github.com/alura-cursos/2700-spring-boot/archive/aula_5.zip" rel="nofollow" target = "_blank">Download</a>
-          </ul>
+        <div id="parent">
+          <div class="project">
+            <h3>Alura - Spring Boot</h3>
+            <p class="project__description">
+              CRUD com Spring e FlyWay<br><br>
+              Ambientes de execução utilizados: intellij e Insomnia.<br><br>
+              Eliminação da necessidade de conversão manual de cada imagem.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Java</li>
+              <li class="project__stack-item">Spring Boot</li>
+              <li class="project__stack-item">MySQL</li>
+              <li class="project__stack-item">Insomnia</li>
+            </ul>
+            <a href="https://github.com/alura-cursos/2700-spring-boot/archive/aula_5.zip" rel="nofollow"
+              target="_blank">
+              <i class="fas fa-download fa-lg"></i>
+            </a>
+          </div>
         </div>
-      </div>
     </section>
 
-    <!-- Skills -->
     <section class="section skills" id="skills">
       <h2 class="section__title">Linguagens</h2>
       <ul class="skills__list">
@@ -204,18 +210,17 @@
           <h4>Formação social e Sustentabilidades</h4>
         </a>
         <br>
-        
-        <a href="https://cursos.alura.com.br/certificate/fesantiagx/shellscripting"
-          class="certificate" target="_blank">
+
+        <a href="https://cursos.alura.com.br/certificate/fesantiagx/shellscripting" class="certificate" target="_blank">
           <h4>Shell Scripting: Automação de tarefas</h4>
         </a>
         <br>
-        
+
         <a href="https://cursos.alura.com.br/certificate/fesantiagx/spring-boot-3-desenvolva-api-rest-java"
           class="certificate" target="_blank">
           <h4>Spring Boot 3: desenvolva uma API Rest em Java</h4>
         </a>
-        
+
 
       </div>
     </section>
@@ -223,14 +228,12 @@
     <section id="courses" class="section courses">
       <h2 class="section__title">Cursos</h2>
       <div class="about center">
-        <a href="https://www.alura.com.br/formacao-shell-scripting"
-          class="certificate" target="_blank">
+        <a href="https://www.alura.com.br/formacao-shell-scripting" class="certificate" target="_blank">
           <h4>Formação Shell Scripting: automatize tarefas</h4>
         </a>
         <br>
-    
-        <a href="https://cursos.alura.com.br/formacao-spring-boot-3"
-          class="certificate" target="_blank">
+
+        <a href="https://cursos.alura.com.br/formacao-spring-boot-3" class="certificate" target="_blank">
           <h4>Java e Spring Boot</h4>
         </a>
         <br>
